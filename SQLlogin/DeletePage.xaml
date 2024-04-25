@@ -1,0 +1,25 @@
+﻿<Page x:Class="SQLlogin.DeletePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SQLlogin"
+      xmlns:lang="clr-namespace:SQLlogin.Language"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="350"
+      Title="DeletePage" Background="SlateGray">
+
+    <Grid  Margin="30">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Are You Sure You Want Delete...?" Foreground="Red" Grid.Row="0" Grid.Column="0" FontSize="18" HorizontalAlignment="Center"></TextBlock>
+        <Button x:Name="btnyes" Content="{x:Static lang:Resource.yes}" Click="btnyes_Click"  BorderBrush="White" BorderThickness="5" Width="120" Height="35" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"   FontSize="17" Margin="10" HorizontalAlignment="Left"></Button>
+        <Button x:Name="btnno" Content="{x:Static lang:Resource.no}"   Click="btnno_Click"  BorderBrush="White" BorderThickness="5" Width="120" Height="35" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"   FontSize="17" Margin="10" HorizontalAlignment="Right"></Button>
+    </Grid>
+</Page>
